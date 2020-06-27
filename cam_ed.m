@@ -63,10 +63,10 @@ for index = 1:50
 
 	end
 	IMG_ED = reshape(ZXZY,[row,col]);
-    I_mf = medfilt2(IMG_ED,[3 3]);
+%    I_mf = medfilt2(IMG_ED,[3 3]);
     for i = 1:row
         for j = 1:col            
-            if (I_mf(i,j) > 0)
+            if (IMG_ED(i,j) > 0)
                 I(i,j,1)=0;
 				I(i,j,2)=255;
 				I(i,j,3)=0;
