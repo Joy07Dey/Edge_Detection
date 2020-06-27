@@ -51,7 +51,7 @@ for index = 1:50
 		end
 		[r,c]=size(IMG_COL);
 		IMG = reshape(IMG_COL,[1,r*c]);
-		ZZZ = ped(IMG, filter, r, c, thld);
+		ZZZ = pl_ed(IMG, filter, r, c, thld);
 
 		if (first_slice==1)
 			ZXZY(1:slice*row) = ZZZ(:,1:slice*row);
