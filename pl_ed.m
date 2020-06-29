@@ -1,4 +1,4 @@
-function [ZXZY] = ped(IMG, filter, row, col, thld)
+function [ZXZY] = pl_ed(IMG, filter, row, col, thld)
 	x = filter; y = filter; DTHLD = thld;
     ZXZY = IMG;
     for i = x+1:col-x
